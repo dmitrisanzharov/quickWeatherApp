@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dmitri Sanzharov Page</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="Dmitri Sanzharov" content="Dmitri Stuff">
+</head>
+
+<body>
+
+  <h1>The Weather Here</h1>
+
+  <ul>
+      <li>
+          <a href="http://localhost:1000">check in</a>
+      </li>
+      <li>
+        <a href="http://localhost:1000/check.html">view checkins</a>
+      </li>
+  </ul>
+
+  <select id='location' required>
+    <option selected value disabled>select city</option>
+    <option>Dublin</option>
+    <option>Berlin</option>
+    <option>Moscow</option>
+  </select>
+
+  <br />
+  <br />
+
+  <button id='checkInButton'>check in</button>
+  
+  
+  <div class='pinkBack'>
+      <span id='lat'>...</span>
+        <span id='lon'>...</span>
+  </div>
+
+  <div class='pinkBack'>
+    <p>The weather here is <span id='conditions'>...</span> with a temprature 
+    of <span id='temp'>...</span> degrees celcius.
+    </p>
+  </div>
+
+
+
+
+<!-- scripts  -->
+<link rel='stylesheet' href='index.css' />
+<script type='module' src='index.js'></script>
+</body>
+</html>
